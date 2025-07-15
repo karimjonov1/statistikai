@@ -1,5 +1,3 @@
-# statistikai
-Interaktiv ta’lim tahlil platformasi
 # 📊 statistikai
 
 Bu loyiha O‘zbekistonda ta’limdagi hududiy farqlarni tahlil qilish va ko‘rsatishga xizmat qiladi. Foydalanuvchi viloyat tanlaydi — va statistik ko‘rsatkichlar, AI bashoratlar, tavsiyalar va sentiment analizni ko‘radi.
