@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a68d9b71285a55b206454a3c5b618070 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a68d9b71285a55b206454a3c5b618070" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a68d9b71285a55b206454a3c5b618070 = L.map(
+                "map_a68d9b71285a55b206454a3c5b618070",
+                {
+                    center: [40.500392857142856, 67.17097857142856],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2fe228d7cc73b7fb1c77b570ae6a550e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_2fe228d7cc73b7fb1c77b570ae6a550e.addTo(map_a68d9b71285a55b206454a3c5b618070);
+        
+    
+            var circle_marker_934cc5f97b87cb0e4831345e16dfa4e3 = L.circleMarker(
+                [41.3111, 69.2797],
+                {"bubblingMouseEvents": true, "color": "#009600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009600", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.2, "stroke": true, "weight": 3}
+            ).addTo(map_a68d9b71285a55b206454a3c5b618070);
+        
+    
+        var popup_1c261c95133d5ecc36ab1b09ecb06a03 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4a4fa391947eed986ead08fbc8f27e28 = $(`<div id="html_4a4fa391947eed986ead08fbc8f27e28" style="width: 100.0%; height: 100.0%;"><b>Tashkent City</b><br>Avg score: 82<br>Dropout rate: 1.5%<br>Schools: 320<br>Students: 520000<br>Teachers: 22000<br>Internet coverage: 98%</div>`)[0];
+                popup_1c261c95133d5ecc36ab1b09ecb06a03.setContent(html_4a4fa391947eed986ead08fbc8f27e28);
+            
+        
+
+        circle_marker_934cc5f97b87cb0e4831345e16dfa4e3.bindPopup(popup_1c261c95133d5ecc36ab1b09ecb06a03)
+        ;
+
+        
+    
+    
+            var circle_marker_36699f0ad8de54fd936945445df9f944 = L.circleMarker(
+                [41.0, 69.0],
+                {"bubblingMouseEvents": true, "color": "#5c5f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5c5f00", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
+            ).addTo(map_a68d9b71285a55b206454a3c5b618070);
+        
+    
+        var popup_d94d208c1afd04b54a8cb8484ba7b72f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fb29a734fc249411aae1619d75f6379e = $(`<div id="html_fb29a734fc249411aae1619d75f6379e" style="width: 100.0%; height: 100.0%;"><b>Tashkent Region</b><br>Avg score: 74<br>Dropout rate: 2.3%<br>Schools: 850<br>Students: 1100000<br>Teachers: 54000<br>Internet coverage: 85%</div>`)[0];
+                popup_d94d208c1afd04b54a8cb8484ba7b72f.setContent(html_fb29a734fc249411aae1619d75f6379e);
+            
+        
+
+        circle_marker_36699f0ad8de54fd936945445df9f944.bindPopup(popup_d94d208c1afd04b54a8cb8484ba7b72f)
+        ;
+
+        
+    
+    
+            var circle_marker_d2bdfedad0eaf9c0774f97ed5ce9e985 = L.circleMarker(
+                [39.6542, 66.9597],
+                {"bubblingMouseEvents": true, "color": "#8b4400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8b4400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.8, "stroke": true, "weight": 3}
+            ).addTo(map_a68d9b71285a55b206454a3c5b618070);
+        
+    
+        var popup_8d9a245f1f6ee6438afee636328db17f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9ba3854637406062472607a47bf7aeb8 = $(`<div id="html_9ba3854637406062472607a47bf7aeb8" style="width: 100.0%; height: 100.0%;"><b>Samarkand</b><br>Avg score: 70<br>Dropout rate: 3.2%<br>Schools: 780<br>Students: 980000<br>Teachers: 48000<br>Internet coverage: 72%</div>`)[0];
+                popup_8d9a245f1f6ee6438afee636328db17f.setContent(html_9ba3854637406062472607a47bf7aeb8);
+            
+        
+
+        circle_marker_d2bdfedad0eaf9c0774f97ed5ce9e985.bindPopup(popup_8d9a245f1f6ee6438afee636328db17f)
+        ;
+
+        
+    
+    
+            var circle_marker_a09042737cea04efa971a7983fe5ae23 = L.circleMarker(
+                [39.7747, 64.4286],
+                {"bubblingMouseEvents": true, "color": "#a23600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a23600", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.2, "stroke": true, "weight": 3}
+            ).addTo(map_a68d9b71285a55b206454a3c5b618070);
+        
+    
+        var popup_b49e24ac4949fa9159c2f814685fc361 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0703d7085ccd3a3324fa6490e21704c2 = $(`<div id="html_0703d7085ccd3a3324fa6490e21704c2" style="width: 100.0%; height: 100.0%;"><b>Bukhara</b><br>Avg score: 68<br>Dropout rate: 3.5%<br>Schools: 520<br>Students: 620000<br>Teachers: 30000<br>Internet coverage: 70%</div>`)[0];
+                popup_b49e24ac4949fa9159c2f814685fc361.setContent(html_0703d7085ccd3a3324fa6490e21704c2);
+            
+        
+
+        circle_marker_a09042737cea04efa971a7983fe5ae23.bindPopup(popup_b49e24ac4949fa9159c2f814685fc361)
+        ;
+
+        
+    
+    
+            var circle_marker_f41cfc9090f7fa95e908fe4bf96dd3ae = L.circleMarker(
+                [40.7836, 72.3336],
+                {"bubblingMouseEvents": true, "color": "#b92800", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b92800", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.4, "stroke": true, "weight": 3}
+            ).addTo(map_a68d9b71285a55b206454a3c5b618070);
+        
+    
+        var popup_4c48cf9fd738fa0271fa496807811eb7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0f0d4de26c0399a8767d4c0e225ac172 = $(`<div id="html_0f0d4de26c0399a8767d4c0e225ac172" style="width: 100.0%; height: 100.0%;"><b>Andijan</b><br>Avg score: 66<br>Dropout rate: 3.9%<br>Schools: 690<br>Students: 940000<br>Teachers: 42000<br>Internet coverage: 68%</div>`)[0];
+                popup_4c48cf9fd738fa0271fa496807811eb7.setContent(html_0f0d4de26c0399a8767d4c0e225ac172);
+            
+        
+
+        circle_marker_f41cfc9090f7fa95e908fe4bf96dd3ae.bindPopup(popup_4c48cf9fd738fa0271fa496807811eb7)
+        ;
+
+        
+    
+    
+            var circle_marker_c27817a26009322c241eca6ddfb1b932 = L.circleMarker(
+                [40.3842, 71.7843],
+                {"bubblingMouseEvents": true, "color": "#963d00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#963d00", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.6, "stroke": true, "weight": 3}
+            ).addTo(map_a68d9b71285a55b206454a3c5b618070);
+        
+    
+        var popup_eb2b4f5a7031e98948bbb331f30dca18 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5b612375dbda26c0e0d5332b5a93814c = $(`<div id="html_5b612375dbda26c0e0d5332b5a93814c" style="width: 100.0%; height: 100.0%;"><b>Fergana</b><br>Avg score: 69<br>Dropout rate: 3.4%<br>Schools: 720<br>Students: 960000<br>Teachers: 45000<br>Internet coverage: 73%</div>`)[0];
+                popup_eb2b4f5a7031e98948bbb331f30dca18.setContent(html_5b612375dbda26c0e0d5332b5a93814c);
+            
+        
+
+        circle_marker_c27817a26009322c241eca6ddfb1b932.bindPopup(popup_eb2b4f5a7031e98948bbb331f30dca18)
+        ;
+
+        
+    
+    
+            var circle_marker_922849adef03f0a305e045ac85fc6853 = L.circleMarker(
+                [41.0, 71.67],
+                {"bubblingMouseEvents": true, "color": "#ad2f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ad2f00", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.2, "stroke": true, "weight": 3}
+            ).addTo(map_a68d9b71285a55b206454a3c5b618070);
+        
+    
+        var popup_986222068b9fce187b82c943be2ecb50 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d9b7260d8f8345ed0bc6701698095997 = $(`<div id="html_d9b7260d8f8345ed0bc6701698095997" style="width: 100.0%; height: 100.0%;"><b>Namangan</b><br>Avg score: 67<br>Dropout rate: 3.7%<br>Schools: 610<br>Students: 820000<br>Teachers: 38000<br>Internet coverage: 69%</div>`)[0];
+                popup_986222068b9fce187b82c943be2ecb50.setContent(html_d9b7260d8f8345ed0bc6701698095997);
+            
+        
+
+        circle_marker_922849adef03f0a305e045ac85fc6853.bindPopup(popup_986222068b9fce187b82c943be2ecb50)
+        ;
+
+        
+    
+    
+            var circle_marker_2d6466bf53ec0c781c5943e8abefdc06 = L.circleMarker(
+                [38.8, 65.8],
+                {"bubblingMouseEvents": true, "color": "#dc1400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dc1400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_a68d9b71285a55b206454a3c5b618070);
+        
+    
+        var popup_d43a152750d31937f1762888e618882f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7799812e83be5e042835785387a87d3a = $(`<div id="html_7799812e83be5e042835785387a87d3a" style="width: 100.0%; height: 100.0%;"><b>Kashkadarya</b><br>Avg score: 63<br>Dropout rate: 4.3%<br>Schools: 700<br>Students: 900000<br>Teachers: 41000<br>Internet coverage: 60%</div>`)[0];
+                popup_d43a152750d31937f1762888e618882f.setContent(html_7799812e83be5e042835785387a87d3a);
+            
+        
+
+        circle_marker_2d6466bf53ec0c781c5943e8abefdc06.bindPopup(popup_d43a152750d31937f1762888e618882f)
+        ;
+
+        
+    
+    
+            var circle_marker_7ac6ae04225cd65d5ce8a03aa3d46884 = L.circleMarker(
+                [37.94, 67.57],
+                {"bubblingMouseEvents": true, "color": "#f30600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f30600", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.8, "stroke": true, "weight": 3}
+            ).addTo(map_a68d9b71285a55b206454a3c5b618070);
+        
+    
+        var popup_cc2e28485eb132f54982655259c4e952 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_585f1b498679a40da7ce41287e3923b4 = $(`<div id="html_585f1b498679a40da7ce41287e3923b4" style="width: 100.0%; height: 100.0%;"><b>Surkhandarya</b><br>Avg score: 61<br>Dropout rate: 4.8%<br>Schools: 580<br>Students: 780000<br>Teachers: 32000<br>Internet coverage: 58%</div>`)[0];
+                popup_cc2e28485eb132f54982655259c4e952.setContent(html_585f1b498679a40da7ce41287e3923b4);
+            
+        
+
+        circle_marker_7ac6ae04225cd65d5ce8a03aa3d46884.bindPopup(popup_cc2e28485eb132f54982655259c4e952)
+        ;
+
+        
+    
+    
+            var circle_marker_3b1e44f319c1d805ccf581120c14eb72 = L.circleMarker(
+                [40.125, 67.88],
+                {"bubblingMouseEvents": true, "color": "#c52200", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c52200", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.2, "stroke": true, "weight": 3}
+            ).addTo(map_a68d9b71285a55b206454a3c5b618070);
+        
+    
+        var popup_edd3b6ded43bb752e6d0292f7d702123 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_20f0bfe09923f197c89e95fe465d09b0 = $(`<div id="html_20f0bfe09923f197c89e95fe465d09b0" style="width: 100.0%; height: 100.0%;"><b>Jizzakh</b><br>Avg score: 65<br>Dropout rate: 3.9%<br>Schools: 420<br>Students: 520000<br>Teachers: 24000<br>Internet coverage: 65%</div>`)[0];
+                popup_edd3b6ded43bb752e6d0292f7d702123.setContent(html_20f0bfe09923f197c89e95fe465d09b0);
+            
+        
+
+        circle_marker_3b1e44f319c1d805ccf581120c14eb72.bindPopup(popup_edd3b6ded43bb752e6d0292f7d702123)
+        ;
+
+        
+    
+    
+            var circle_marker_2a6ab00c8792c1dea48db46c3144d9aa = L.circleMarker(
+                [40.83, 68.66],
+                {"bubblingMouseEvents": true, "color": "#b92800", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b92800", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_a68d9b71285a55b206454a3c5b618070);
+        
+    
+        var popup_1408051705907cc57a33047517f96a41 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6f75b33cf18602a124674278d584edec = $(`<div id="html_6f75b33cf18602a124674278d584edec" style="width: 100.0%; height: 100.0%;"><b>Sirdarya</b><br>Avg score: 66<br>Dropout rate: 3.6%<br>Schools: 300<br>Students: 360000<br>Teachers: 18000<br>Internet coverage: 66%</div>`)[0];
+                popup_1408051705907cc57a33047517f96a41.setContent(html_6f75b33cf18602a124674278d584edec);
+            
+        
+
+        circle_marker_2a6ab00c8792c1dea48db46c3144d9aa.bindPopup(popup_1408051705907cc57a33047517f96a41)
+        ;
+
+        
+    
+    
+            var circle_marker_85ff75f2c610cbdb3448356ce73a6c8e = L.circleMarker(
+                [41.55, 60.63],
+                {"bubblingMouseEvents": true, "color": "#d01b00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d01b00", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.4, "stroke": true, "weight": 3}
+            ).addTo(map_a68d9b71285a55b206454a3c5b618070);
+        
+    
+        var popup_76cb355d0d1d80dc62d15e1a1cbf8e47 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eb03cc9b0c732f8540ecd5c89822dbd6 = $(`<div id="html_eb03cc9b0c732f8540ecd5c89822dbd6" style="width: 100.0%; height: 100.0%;"><b>Khorezm</b><br>Avg score: 64<br>Dropout rate: 4.1%<br>Schools: 500<br>Students: 640000<br>Teachers: 29000<br>Internet coverage: 62%</div>`)[0];
+                popup_76cb355d0d1d80dc62d15e1a1cbf8e47.setContent(html_eb03cc9b0c732f8540ecd5c89822dbd6);
+            
+        
+
+        circle_marker_85ff75f2c610cbdb3448356ce73a6c8e.bindPopup(popup_76cb355d0d1d80dc62d15e1a1cbf8e47)
+        ;
+
+        
+    
+    
+            var circle_marker_8bd66045b92e60286f34a829dd25fe65 = L.circleMarker(
+                [43.7683, 59.0186],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_a68d9b71285a55b206454a3c5b618070);
+        
+    
+        var popup_3906036f2504a3a12f9f7c979a2dc175 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7deb248c6855bbf3061e2effb4325403 = $(`<div id="html_7deb248c6855bbf3061e2effb4325403" style="width: 100.0%; height: 100.0%;"><b>Karakalpakstan</b><br>Avg score: 60<br>Dropout rate: 5.2%<br>Schools: 650<br>Students: 700000<br>Teachers: 36000<br>Internet coverage: 55%</div>`)[0];
+                popup_3906036f2504a3a12f9f7c979a2dc175.setContent(html_7deb248c6855bbf3061e2effb4325403);
+            
+        
+
+        circle_marker_8bd66045b92e60286f34a829dd25fe65.bindPopup(popup_3906036f2504a3a12f9f7c979a2dc175)
+        ;
+
+        
+    
+    
+            var circle_marker_1ebc1027d0ceba9550f6b2d8b9b03b55 = L.circleMarker(
+                [40.0844, 65.3792],
+                {"bubblingMouseEvents": true, "color": "#7f4b00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7f4b00", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.5, "stroke": true, "weight": 3}
+            ).addTo(map_a68d9b71285a55b206454a3c5b618070);
+        
+    
+        var popup_e35e02f909c8b4f0c85571a6529d41e3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2738ebfde62edc213638fe6de8c6d7eb = $(`<div id="html_2738ebfde62edc213638fe6de8c6d7eb" style="width: 100.0%; height: 100.0%;"><b>Navoi</b><br>Avg score: 71<br>Dropout rate: 3.1%<br>Schools: 380<br>Students: 450000<br>Teachers: 21000<br>Internet coverage: 71%</div>`)[0];
+                popup_e35e02f909c8b4f0c85571a6529d41e3.setContent(html_2738ebfde62edc213638fe6de8c6d7eb);
+            
+        
+
+        circle_marker_1ebc1027d0ceba9550f6b2d8b9b03b55.bindPopup(popup_e35e02f909c8b4f0c85571a6529d41e3)
+        ;
+
+        
+    
+</script>
+</html>

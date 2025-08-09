@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EduMap — O‘zbekistonda ta’lim xaritasi</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <span class="logo">📚</span>
+      <div>
+        <h1>EduMap</h1>
+        <p class="subtitle">O‘zbekistonda ta’limdagi hududiy farqlarni tahlil qilish</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <p>
+        Loyiha maqsadi: hududlar bo‘yicha ta’limga kirish, sifati va resurslar
+        farqlarini aniqlash, vizualizatsiya qilish va data-driven tavsiyalar berish.
+      </p>
+    </section>
+
+    <section class="controls">
+      <label for="regionSelect">Viloyatni tanlang:</label>
+      <select id="regionSelect"></select>
+    </section>
+
+    <section class="grid-two">
+      <div class="panel">
+        <h3>Xarita</h3>
+        <div class="map-wrap">
+          <iframe id="mapFrame" src="/map" title="EduMap" frameborder="0"></iframe>
+        </div>
+        <div class="embed-note">
+          Tableau/Power BI ni joylashtirish uchun iframe src manzilini o‘zingizning public dashboard havolangizga almashtiring.
+          Masalan: <code>https://public.tableau.com/views/your-workbook/your-sheet?:showVizHome=no</code>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Hudud statistikasi</h3>
+        <div class="cards">
+          <div class="card"><div class="label">O‘rtacha ball</div><div id="statAvgScore" class="value">–</div></div>
+          <div class="card"><div class="label">Drop-out (%)</div><div id="statDropout" class="value">–</div></div>
+          <div class="card"><div class="label">Maktablar</div><div id="statSchools" class="value">–</div></div>
+          <div class="card"><div class="label">O‘quvchilar</div><div id="statStudents" class="value">–</div></div>
+          <div class="card"><div class="label">Ustozlar</div><div id="statTeachers" class="value">–</div></div>
+          <div class="card"><div class="label">Internet qamrovi (%)</div><div id="statInternet" class="value">–</div></div>
+          <div class="card"><div class="label">O‘quvchi/Ustoz</div><div id="statSTR" class="value">–</div></div>
+        </div>
+
+        <div class="panel">
+          <h4>Taqqoslash: o‘rtacha ball</h4>
+          <canvas id="compareChart" height="180"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-two">
+      <div class="panel">
+        <h3>AI: Bashorat</h3>
+        <form id="predictForm" class="form-grid">
+          <div class="field"><label>Maktablar</label><input type="number" id="p_schools" required /></div>
+          <div class="field"><label>Internet (%)</label><input type="number" id="p_internet" required /></div>
+          <div class="field"><label>Ustozlar</label><input type="number" id="p_teachers" required /></div>
+          <div class="field"><label>O‘quvchilar</label><input type="number" id="p_students" required /></div>
+          <div class="field full"><button type="submit">Bashorat qilish</button></div>
+        </form>
+        <div id="predictResult" class="result"></div>
+      </div>
+
+      <div class="panel">
+        <h3>NLP: Fikr tahlili</h3>
+        <div class="field full">
+          <label>Matn kiriting (so‘rovnoma javobi):</label>
+          <textarea id="sentText" rows="4" placeholder="Maktabimizda internet sust..." ></textarea>
+        </div>
+        <button id="sentBtn">Tahlil qilish</button>
+        <div id="sentResult" class="result"></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h3>Hudud uchun tavsiyalar</h3>
+      <ul id="recsList" class="recs"></ul>
+    </section>
+
+    <footer class="footer">
+      <div>
+        © 2025 EduMap. Ma’lumotlar demo maqsadida. Haqiqiy ma’lumotlar uchun stat.uz, EMIS, Maktab.uz va boshqa ochiq manbalar.
+      </div>
+    </footer>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
