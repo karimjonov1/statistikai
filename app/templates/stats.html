@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block content %}
+<a href="/dashboard{% if token %}?token={{ token }}{% endif %}" class="text-sky-600">← Back to Dashboard</a>
+<h1 class="text-2xl font-semibold mt-2 mb-1">Stats: <span class="font-mono">{{ link.slug }}</span></h1>
+<p class="text-slate-600 mb-4">Total clicks: <strong>{{ total_clicks }}</strong></p>
+
+<div class="bg-white border rounded p-4 mb-6">
+  <h2 class="font-medium mb-3">Last 30 days</h2>
+  <canvas id="chart" height="80"></canvas>
+</div>
+
+<div class="bg-white border rounded p-4">
+  <h2 class="font-medium mb-3">Recent Referrers</h2>
+  {% if recent_referrers|length == 0 %}
+  <p class="text-sm text-slate-600">No referrer data.</p>
+  {% else %}
+  <ul class="list-disc pl-5 text-sm">
+    {% for r in recent_referrers %}
+      <li>{{ r }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>
+
+<script>
+  const labels = {{ labels_json | safe }};
+  const values = {{ values_json | safe }};
+  new Chart(
+    document.getElementById('chart'),
+    {
+      type: 'line',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'Clicks',
+          data: values,
+          fill: false,
+          borderColor: 'rgb(15, 23, 42)',
+          tension: 0.1
+        }]
+      },
+      options: {
+        scales: {
+          y: { beginAtZero: true, precision: 0 }
+        }
+      }
+    }
+  );
+</script>
+{% endblock %}
