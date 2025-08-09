@@ -1,0 +1,65 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+.app-header {
+  background: #0ea5e9;
+  color: white;
+  padding: 14px 18px;
+  position: sticky; top: 0; z-index: 10;
+}
+.brand { display: flex; gap: 12px; align-items: center; }
+.brand .logo { font-size: 28px; }
+.brand h1 { margin: 0; font-size: 22px; }
+.subtitle { margin: 0; opacity: 0.9; font-size: 13px; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 16px; }
+.intro { margin: 12px 0 8px; }
+
+.controls {
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  background: white; padding: 12px; border-radius: 10px; box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+}
+.controls select {
+  padding: 8px 10px; border-radius: 8px; border: 1px solid #cbd5e1; background: #fff;
+}
+
+.grid-two { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 16px; }
+@media (min-width: 900px) {
+  .grid-two { grid-template-columns: 1fr 1fr; }
+}
+
+.panel {
+  background: white; padding: 12px; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.panel h3 { margin-top: 4px; }
+.panel h4 { margin: 8px 0; font-weight: 600; }
+
+.map-wrap { position: relative; width: 100%; height: 360px; border-radius: 10px; overflow: hidden; border: 1px solid #e2e8f0; }
+#mapFrame { width: 100%; height: 100%; display: block; }
+.embed-note { margin-top: 8px; font-size: 12px; color: #334155; background: #f1f5f9; padding: 8px; border-radius: 8px; }
+
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 10px 0; }
+@media (min-width: 520px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 900px) { .cards { grid-template-columns: repeat(4, 1fr); } }
+.card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 10px; }
+.card .label { font-size: 12px; color: #475569; }
+.card .value { font-size: 18px; font-weight: 700; margin-top: 2px; }
+
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.form-grid .field { display: flex; flex-direction: column; gap: 6px; }
+.form-grid .field.full { grid-column: 1 / -1; }
+input, textarea, button { font-size: 14px; }
+input, textarea { padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; }
+button { cursor: pointer; padding: 10px 12px; border: 0; border-radius: 8px; background: #0ea5e9; color: white; font-weight: 600; }
+button:hover { background: #0284c7; }
+
+.result { margin-top: 10px; font-size: 14px; color: #0f172a; background: #f1f5f9; padding: 10px; border-radius: 8px; }
+.recs { margin: 8px 0; padding-left: 18px; }
+
+.footer { margin: 18px 0 8px; font-size: 12px; color: #475569; }

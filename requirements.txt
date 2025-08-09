@@ -1,0 +1,8 @@
+Flask==3.0.3
+Flask-Cors==4.0.1
+numpy==2.1.3
+pandas==2.2.3
+scipy==1.14.1
+scikit-learn==1.6.1
+folium==0.17.0
+vaderSentiment==3.3.2
